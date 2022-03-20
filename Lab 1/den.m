@@ -1,0 +1,21 @@
+close all;
+clc;
+clear all;
+x1=[1 2 3];
+x2=[2 4 6];
+immse(x2,x1);
+meantemp=mean((x2-x1).^2);
+mean11=mean(mean((x2-x1).^2));
+x= (1:2:50);
+y1 = x(1:3:end);
+figure(1);
+plot(x1,x2);
+legend('xD', 'xF');
+xx=1.5;
+xy=2.5;
+xz=4.7;
+xxx=floor(xx);
+xyy=round(xy);
+xzz=floor(xz);
+susu=sum(x1)/length(x1);
+meo=mean(x1)
